@@ -4,12 +4,12 @@ const Header = () => {
   return (
     <div className="header">
       <div className="app-name">
-        <p>Demo Streaming</p>
+        <p>DEMO Streaming</p>
       </div>
       <div className="header-actions">
-        <p>login</p>
+        <p>Log in</p>
         <div className="signup-container">
-          <p>start your free trial</p>
+          <p>Start your free trial</p>
         </div>
       </div>
     </div>

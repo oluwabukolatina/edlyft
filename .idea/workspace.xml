@@ -4,11 +4,14 @@
     <list default="true" id="15eb4838-5072-4b69-a36b-ceb20a4c3970" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/components/Home.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/Loading.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Movies.tsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/components/Popular.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layouts/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/serviceWorker.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/utils/movies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Movies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movies.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Footer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Footer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layouts/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layouts/Header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +64,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616173818250</updated>
-      <workItem from="1616173819670" duration="3353000" />
+      <workItem from="1616173819670" duration="7837000" />
     </task>
     <servers />
   </component>
