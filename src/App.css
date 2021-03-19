@@ -1,0 +1,48 @@
+.app {
+  padding-left: 8%;
+  padding-right: 8%;
+}
+.header{
+  background: red;
+  display: flex;
+  color: white;
+}
+.app-name{
+  width: 70%;
+}
+.header-actions{
+  display: flex;
+  background: green;
+}
+.signup-container{
+  background: #282c34;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+
+.app-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.footer-container{
+  background: gray;
+}
+
+
+.app-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.app-link {
+  color: #61dafb;
+}
+
