@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Popular = () => {
+const PopularMovies = () => {
   return (
     <div className="popular">
       <p>Popular Titles</p>
@@ -8,4 +8,4 @@ const Popular = () => {
   );
 };
 
-export default Popular;
+export default PopularMovies;

@@ -1,9 +1,7 @@
-import React, { useContext } from 'react';
-import AppContext from '../../context/AppContext';
+import React from 'react';
 import Placeholder from '../../assets/placeholder.png';
 
 const Series = () => {
-  const { movies }: any = useContext(AppContext);
   return (
     <div>
       <div className="movie">

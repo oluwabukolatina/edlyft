@@ -7,6 +7,8 @@ const Movies = () => {
   return (
     <div className="movies">
       <MoviesProvider>
+        {/*<p>loading...</p>*/}
+        {/*<p>Oops, something went wrong...</p>*/}
         <Series />
         <Movie />
       </MoviesProvider>

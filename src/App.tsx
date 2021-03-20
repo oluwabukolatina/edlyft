@@ -2,13 +2,16 @@ import React from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom';
 import Home from './components/Home';
-import About from './components/About';
+import AllSeries from './components/AllSeries';
+import MoviesProvider from './provider/MoviesProvider';
 
 const App = () => {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/about" component={About} />
+      <MoviesProvider>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/series" component={AllSeries} />
+      </MoviesProvider>
     </Switch>
   );
 };

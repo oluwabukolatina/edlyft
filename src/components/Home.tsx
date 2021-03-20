@@ -1,14 +1,13 @@
 import React from 'react';
 // import { Link } from 'react-router-dom';
 import Header from '../layouts/Header';
-import Popular from './Popular';
+import PopularSeries from './PopularSeries';
 import Footer from '../layouts/Footer';
 import Movies from './Movies';
-
 const Home = () => (
   <div className="app">
     <Header />
-    <Popular />
+    <PopularSeries />
     <Movies />
     <Footer />
   </div>
