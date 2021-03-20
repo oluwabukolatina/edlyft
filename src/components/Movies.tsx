@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import React from 'react';
+import MoviesProvider from '../provider/MoviesProvider';
+import Series from './series/Series';
+import Movie from './movies/Movie';
 
-import movies from '../utils/movies.json';
 const Movies = () => {
-  const [mov, setMov] = useState();
   return (
-    <div>
-      <div>popu</div>
-      <div>popu</div>
+    <div className="movies">
+      <MoviesProvider>
+        <Series />
+        <Movie />
+      </MoviesProvider>
     </div>
   );
 };
