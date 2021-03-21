@@ -11,7 +11,20 @@ const useMovies = () => {
     fetch(API_URL)
       .then((response) => response.json())
       .then((movies) => {
-        setSeries(movies.entries.filter((serie: MultimediaProps) => serie.programType === 'series'));
+        setSeries(
+          movies.entries
+            .filter((serie: MultimediaProps) => serie.programType === 'series' && serie.releaseYear >= 2010)
+            .slice(0, 21)
+            .sort(function (a: { title: number }, b: { title: number }) {
+              if (a.title < b.title) {
+                return -1;
+              }
+              if (a.title > b.title) {
+                return 1;
+              }
+              return 0;
+            }),
+        );
         setLoading(false);
       });
   };
@@ -20,7 +33,20 @@ const useMovies = () => {
     fetch(API_URL)
       .then((response) => response.json())
       .then((movies) => {
-        setMovies(movies.entries.filter((movie: MultimediaProps) => movie.programType === 'movie'));
+        setMovies(
+          movies.entries
+            .filter((movie: MultimediaProps) => movie.programType === 'movie' && movie.releaseYear >= 2010)
+            .slice(0, 21)
+            .sort(function (a: { title: number }, b: { title: number }) {
+              if (a.title < b.title) {
+                return -1;
+              }
+              if (a.title > b.title) {
+                return 1;
+              }
+              return 0;
+            }),
+        );
         setLoading(false);
       });
   };
