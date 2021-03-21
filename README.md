@@ -144,20 +144,18 @@ Any feedback on the coding challenge once you're done is also appreciated!
   ```shell
   $ npm install
   ```
-- Start your node server
+- Start 
   > run the command below
   ```shell
-  $ npm run dev
+  $ npm start
   ```
-- Use `http://localhost:${PORT}` as base url for endpoints
 
 ## Technologies Used
 - [React](https://reactjs.org/) - React is an open-source, front end, JavaScript library for building user interfaces or UI components..
 - [Typescript](https://www.typescriptlang.org/) - TypeScript is a programming language developed and maintained by Microsoft.
-- [ReactTestingLibrary](https://testing-library.com/) - The Testing Library family of libraries is a very light-weight solution for testing without all the implementation details.
 
 ### Testing Tools
-- [Jest](https://jestjs.io/) - Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+- [ReactTestingLibrary](https://testing-library.com/) - The Testing Library family of libraries is a very light-weight solution for testing without all the implementation details.
 ### Installations
 #### Clone 
 - Clone to your local machine https://github.com/oluwabukolatina/edlyft.git
