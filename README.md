@@ -117,6 +117,9 @@ Layouts- (footer and nav) which appears in all pages are in the layouts folder.
 ### Answer
 I had enough time.
 
+## Live Url
+- [View Live](https://tina-edlyft.netlify.app) 
+
 ## Other Notes
 
 Please send through any other code or projects that you're proud of and would like to share with us.
@@ -131,6 +134,49 @@ Any feedback on the coding challenge once you're done is also appreciated!
 - [SeatGate](https://seatgate.info) - Role - React Dev
 - [Awabah](https://awabahng.com/) - Role - Nodejs Dev
 
- ## Author
-## [Tina] (https://github.com/oluwabukolatina)
+## Getting Started
+>  [Technologies](#technologies-used) &middot; [Testing Tools](#testing-tools) &middot; [Installations](#installations) &middot; [Tests](#tests) &middot; [Author](#author)
+---
 
+#### Setup
+- Installing the project dependencies
+  > Run the command below
+  ```shell
+  $ npm install
+  ```
+- Start your node server
+  > run the command below
+  ```shell
+  $ npm run dev
+  ```
+- Use `http://localhost:${PORT}` as base url for endpoints
+
+## Technologies Used
+- [React](https://reactjs.org/) - React is an open-source, front end, JavaScript library for building user interfaces or UI components..
+- [Typescript](https://www.typescriptlang.org/) - TypeScript is a programming language developed and maintained by Microsoft.
+- [ReactTestingLibrary](https://testing-library.com/) - The Testing Library family of libraries is a very light-weight solution for testing without all the implementation details.
+
+### Testing Tools
+- [Jest](https://jestjs.io/) - Jest is a delightful JavaScript Testing Framework with a focus on simplicity.
+### Installations
+#### Clone 
+- Clone to your local machine https://github.com/oluwabukolatina/edlyft.git
+#### Setup
+- Installing the project dependencies
+  > Run the command below
+  ```shell
+  $ npm install
+  ```
+- Start your node server
+  > run the command below
+  ```shell
+  $ npm start
+  ```
+### Testing
+- Run tests for all
+  > run the command below
+  ```shell
+  $ npm run test
+  ```
+## Author
+- [Tina](https://github.com/oluwabukolatina)
