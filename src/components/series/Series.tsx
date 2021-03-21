@@ -12,6 +12,7 @@ const Series: React.FC<RouteComponentProps> = ({ history }) => {
   };
   return (
     <div
+      data-testid="series"
       onClick={() => {
         goToPage();
         getSeries();

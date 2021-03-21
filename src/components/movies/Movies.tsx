@@ -12,6 +12,7 @@ const Movies: React.FC<RouteComponentProps> = ({ history }) => {
 
   return (
     <div
+      data-testid="movies"
       onClick={() => {
         goToPage();
         getMovies();

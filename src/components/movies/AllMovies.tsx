@@ -9,25 +9,26 @@ import { ContextType } from '../../types/ContextType';
 
 const AllMovies = () => {
   const { movies, loading, error } = useContext(AppContext) as ContextType;
+  const displayMovies = movies.length ? (
+    <div className="series">
+      {movies.map((movie: MultimediaProps, i: number) => (
+        <div data-testid="movie" className="movie" key={i + 1}>
+          <img className="movie-img" src={movie.images['Poster Art'].url} key={i + 1} alt="movie poster" />
+          <p className="title">{movie.title}</p>
+        </div>
+      ))}
+    </div>
+  ) : (
+    <p data-testid="none">no movies</p>
+  );
 
   return (
-    <>
+    <p>
       <PopularMovies />
       {error && <Error />}
-      {loading ? (
-        <Loading />
-      ) : (
-        <div className="series">
-          {movies.map((serie: MultimediaProps, i: number) => (
-            <div className="serie" key={i + 1}>
-              <img className="movie-img" src={serie.images['Poster Art'].url} key={i + 1} alt="movie poster" />
-              <p className="title">{serie.title}</p>
-            </div>
-          ))}
-        </div>
-      )}
+      {loading ? <Loading /> : displayMovies}
       <Footer />
-    </>
+    </p>
   );
 };
 
