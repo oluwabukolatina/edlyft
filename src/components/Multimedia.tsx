@@ -5,8 +5,6 @@ import Movies from './movies/Movies';
 const Multimedia = () => {
   return (
     <div className="movies">
-      {/*<p>loading...</p>*/}
-      {/*<p>Oops, something went wrong...</p>*/}
       <Series />
       <Movies />
     </div>
