@@ -156,3 +156,26 @@ footer{
 .login{    margin-top: 19%;}
 .movie-img{width: 207px;}
 }
+
+@media only screen and (max-width: 368px) {
+  .header{
+    grid-template-columns: 1fr;
+padding-top: 1rem;
+padding-bottom: 1rem;
+  }
+  .login{display: none;}
+  .items{display: grid;
+    grid-template-columns: 1fr;}
+
+  .series{
+    grid-template-columns: 1fr;
+  }
+  footer{
+    height: 16%;
+    width: 100%;
+  }
+  .store{display: none;}
+  
+  .signup-container{display: none;}
+  .movie-img{width: 207px;}
+  }
