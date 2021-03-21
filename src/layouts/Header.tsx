@@ -9,12 +9,11 @@ const Header = () => {
           DEMO Streaming
         </Link>
       </div>
-      <div className="header-actions">
-        <p>Log in</p>
-        <div className="signup-container">
-          <p>Start your free trial</p>
-        </div>
+      <p className="login">Log in</p>
+      <div className="signup-container">
+        <p>Start your free trial</p>
       </div>
+      {/* </div> */}
     </div>
   );
 };
