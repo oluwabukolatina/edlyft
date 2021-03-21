@@ -1,22 +1,29 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { MultimediaProps } from '../components/types/MultimediaProps';
-import moviesData from '../utils/movies.json';
 
 const useMovies = () => {
-  const [movies, setMovies] = useState<MultimediaProps[]>([]);
-  const [series, setSeries] = useState<MultimediaProps[]>([]);
+  const [movies, setMovies] = useState([]);
+  const [series, setSeries] = useState([]);
+  const [loading, setLoading] = useState(false);
   const getSeries = () => {
-    setSeries(moviesData.entries.filter((param) => param.programType === 'series'));
+    setLoading(true);
+    fetch('https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json')
+      .then((response) => response.json())
+      .then((movies) => {
+        setSeries(movies.entries.filter((serie: MultimediaProps) => serie.programType === 'series'));
+        setLoading(false);
+      });
   };
   const getMovies = () => {
-    setMovies(moviesData.entries.filter((param) => param.programType === 'movie'));
+    setLoading(true);
+    fetch('https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json')
+      .then((response) => response.json())
+      .then((movies) => {
+        setMovies(movies.entries.filter((movie: MultimediaProps) => movie.programType === 'movie'));
+        setLoading(false);
+      });
   };
 
-  useEffect(() => {
-    getSeries();
-    getMovies();
-  }, []);
-
-  return { movies, series };
+  return { movies, series, loading, getMovies, getSeries };
 };
 export default useMovies;

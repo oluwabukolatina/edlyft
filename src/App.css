@@ -24,9 +24,11 @@ margin-bottom: auto;
   padding-left: 1rem;
   padding-right: 1rem;
 }
-.signup-container p{
-  /* margin-top: 4%; */
-/* margin-bottom: 7%; */
+
+.loading{
+  padding-left: 4rem;
+color: black;
+font-weight: lighter;
 }
 
 .app-logo {

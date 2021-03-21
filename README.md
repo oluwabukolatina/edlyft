@@ -1,68 +1,100 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Stan Coding Challenge
 
-## Available Scripts
+> Welcome to the Stan Coding Challenge!
 
-In the project directory, you can run:
+## Overview
 
-### `yarn start`
+To complete this challenge, you will need to write a simple [React](https://facebook.github.io/react/) based web app, and provide us the source files to be built.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The purpose of this challenge is to assess your **skills and approach to composing a simple web app** given a set of screens and an API feed. We will also assess the **generated HTML, CSS, and JS** output.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+This challenge is expected to take about 2-4 hours.
 
-### `yarn test`
+## The Challenge
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+It's pretty simple. Using the provided screens as a reference, you'll need to build a set of React components to render the app. You'll also need to request a JSON feed, filter that data, and use the relevant fields.
 
-### `yarn build`
+Although this is a basic exercise, we'll be looking for **simple, well-designed, performant, and tested code** in the submission.
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Please include a `README` with setup instructions, and any tests or other documentation you created as part of your solution.
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+Also, add the following info to your `README`:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- How did you decide on the technical and architectural choices used as part of your solution?
+- Are there any improvements you could make to your submission?
+- What would you do differently if you were allocated more time?
 
-### `yarn eject`
+## Details
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+You will need to build the following 3 pages with React:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- A "Home" page
+- A "Series" page
+- A "Movies" page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+The deployable solution should be built in a folder named **`dist`** with an entry point file of **`index.html`**.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Please create components for each part of the page (eg. header, content, footer, etc).
+Assets are provided in the `assets` folder.
 
-## Learn More
+The pages should also be usable on mobile and tablet devices.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+You can assume that you do not have to support legacy browsers without features such as `fetch` or `flexbox`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### "Home" Page
 
-### Code Splitting
+Refer to the [screens/1-home.jpg](./screens/1-home.jpg) screen.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+This will be your `index.html` screen.
 
-### Analyzing the Bundle Size
+You will need to display 2 tiles, which link to the "Series" page and the "Movies" page.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+### "Series" and "Movies" Pages
 
-### Making a Progressive Web App
+Refer to the [screens/2-series.jpg](./screens/2-series.jpg) and [screens/3-movies.jpg](./screens/3-movies.jpg) screens.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+For each page you will need to fetch this JSON feed [feed/sample.json](https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json), then:
 
-### Advanced Configuration
+- Display the first 21 `entries`
+- Where the entry has a `releaseYear` attribute value >= `2010`
+- Sorted by the `title` attribute value in ascending alphanumeric order
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+For the "Series" page filter on:
 
-### Deployment
+- Where the entry has a `programType` attribute value of `series`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+For the "Movies" page filter on:
 
-### `yarn build` fails to minify
+- Where the entry has a `programType` attribute value of `movie`
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The attributes you should use to display the entries are:
+
+- `title`
+- `images` → `Poster Art` → `url`
+
+You will also need to handle the loading and error states of fetching the JSON feed:
+
+- "Loading" state [screens/1.1-loading.jpg](./screens/1.1-loading.jpg)
+- "Error" state [screens/1.2-error.jpg](./screens/1.2-error.jpg)
+
+## FAQ
+
+### What language, framework, build tool... should I use?
+
+You may use whatever you like as long as the solution is built using [React](https://facebook.github.io/react/) or an equivalent library.
+
+We prefer it if you did not use any third party CSS frameworks.
+
+We also prefer the use of minimal dependencies.
+
+## Useful Links
+
+- [Bitbucket](https://bitbucket.org/) - Source code hosting, with free private repositories for small teams.
+- [Google Fonts - Raleway](https://fonts.google.com/?selection.family=Raleway)
+- [React](https://facebook.github.io/react/)
+
+## Other Notes
+
+Please send through any other code or projects that you're proud of and would like to share with us.
+
+Any feedback on the coding challenge once you're done is also appreciated!
