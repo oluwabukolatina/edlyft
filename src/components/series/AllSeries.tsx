@@ -1,9 +1,8 @@
 import React, { useContext } from 'react';
-import Header from '../../layouts/Header';
 import PopularSeries from '../PopularSeries';
 import Footer from '../../layouts/Footer';
 import AppContext from '../../context/AppContext';
-import { Series } from '../../hooks/useMovies';
+import { MultimediaProps } from '../types/MultimediaProps';
 
 const AllSeries = () => {
   const { series }: any = useContext(AppContext);
@@ -12,7 +11,7 @@ const AllSeries = () => {
     <>
       <PopularSeries />
       <div className="series">
-        {series.map((serie: Series, i: number) => (
+        {series.map((serie: MultimediaProps, i: number) => (
           <div className="serie" key={i + 1}>
             <img className="movie-img" src={serie.images['Poster Art'].url} key={i + 1} alt="movie poster" />
             <p className="title">{serie.title}</p>

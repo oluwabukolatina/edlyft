@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 import Placeholder from '../../assets/placeholder.png';
 const Series = ({ history }: any) => {
   const goToPage = () => {
@@ -15,4 +16,4 @@ const Series = ({ history }: any) => {
   );
 };
 
-export default Series;
+export default withRouter(Series);

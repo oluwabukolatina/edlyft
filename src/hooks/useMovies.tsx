@@ -1,15 +1,10 @@
 import { useEffect, useState } from 'react';
+import { MultimediaProps } from '../components/types/MultimediaProps';
 import moviesData from '../utils/movies.json';
-export interface Series {
-  title: string;
-  description: string;
-  programType: string;
-  images: any;
-  releaseYear: number;
-}
+
 const useMovies = () => {
-  const [movies, setMovies] = useState<Series[]>([]);
-  const [series, setSeries] = useState<Series[]>([]);
+  const [movies, setMovies] = useState<MultimediaProps[]>([]);
+  const [series, setSeries] = useState<MultimediaProps[]>([]);
   const getSeries = () => {
     setSeries(moviesData.entries.filter((param) => param.programType === 'series'));
   };
