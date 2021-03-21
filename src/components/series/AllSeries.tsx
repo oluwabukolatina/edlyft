@@ -9,7 +9,7 @@ import Loading from '../shared/Loading';
 const AllSeries = () => {
   const { series, loading, error } = useContext(AppContext) as ContextType;
   const displaySeries = series.length ? (
-    <div className="series" data-testid="all-series">
+    <div className="series">
       {series.map((serie: MultimediaProps, i: number) => (
         <div data-testid="serie" className="serie" key={i + 1}>
           <img className="movie-img" src={serie.images['Poster Art'].url} key={i + 1} alt="movie poster" />

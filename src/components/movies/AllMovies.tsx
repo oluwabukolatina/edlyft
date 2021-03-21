@@ -11,7 +11,7 @@ const AllMovies = () => {
   const displayMovies = movies.length ? (
     <div className="series">
       {movies.map((movie: MultimediaProps, i: number) => (
-        <div data-testid="movie" className="movie" key={i + 1}>
+        <div data-testid="movie" className="serie" key={i + 1}>
           <img className="movie-img" src={movie.images['Poster Art'].url} key={i + 1} alt="movie poster" />
           <p className="title">{movie.title}</p>
         </div>
@@ -22,11 +22,11 @@ const AllMovies = () => {
   );
 
   return (
-    <p>
+    <>
       <PopularMovies />
       {error && <Error />}
       {loading ? <Loading /> : displayMovies}
-    </p>
+    </>
   );
 };
 
