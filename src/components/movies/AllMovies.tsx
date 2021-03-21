@@ -2,12 +2,14 @@ import React, { useContext } from 'react';
 import Footer from '../../layouts/Footer';
 import AppContext from '../../context/AppContext';
 import PopularMovies from '../PopularMovies';
-import { MultimediaProps } from '../types/MultimediaProps';
+import { MultimediaProps } from '../../types/MultimediaProps';
 import Loading from '../Loading';
 import Error from '../Error';
+import { ContextType } from '../../types/ContextType';
 
 const AllMovies = () => {
-  const { movies, loading, error }: any = useContext(AppContext);
+  const { movies, loading, error } = useContext(AppContext) as ContextType;
+
   return (
     <>
       <PopularMovies />

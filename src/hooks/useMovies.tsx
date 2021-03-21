@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { MultimediaProps } from '../components/types/MultimediaProps';
+import { MultimediaProps } from '../types/MultimediaProps';
 
 const API_URL = 'https://raw.githubusercontent.com/StreamCo/react-coding-challenge/master/feed/sample.json';
 const useMovies = () => {

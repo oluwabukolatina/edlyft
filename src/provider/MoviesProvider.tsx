@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { FC, ReactNode } from 'react';
 import AppContext from '../context/AppContext';
 import useMovies from '../hooks/useMovies';
 
-const MoviesProvider = ({ children }: any) => {
+const MoviesProvider: FC<ReactNode> = ({ children }) => {
   const { movies, series, loading, getMovies, getSeries, error } = useMovies();
   return (
     <AppContext.Provider

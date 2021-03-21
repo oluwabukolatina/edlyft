@@ -2,8 +2,11 @@ import React, { useContext } from 'react';
 import { withRouter } from 'react-router';
 import Placeholder from '../../assets/placeholder.png';
 import AppContext from '../../context/AppContext';
-const Series = ({ history }: any) => {
-  const { getSeries }: any = useContext(AppContext);
+import { ContextType } from '../../types/ContextType';
+import { RouteComponentProps } from 'react-router-dom';
+const Series: React.FC<RouteComponentProps> = ({ history }) => {
+  const { getSeries } = useContext(AppContext) as ContextType;
+
   const goToPage = () => {
     history.push('/series');
   };

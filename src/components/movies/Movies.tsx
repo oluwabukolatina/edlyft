@@ -1,10 +1,11 @@
 import React, { useContext } from 'react';
-import { withRouter } from 'react-router';
+import { RouteComponentProps, withRouter } from 'react-router';
 import Placeholder from '../../assets/placeholder.png';
 import AppContext from '../../context/AppContext';
+import { ContextType } from '../../types/ContextType';
 
-const Movies = ({ history }: any) => {
-  const { getMovies }: any = useContext(AppContext);
+const Movies: React.FC<RouteComponentProps> = ({ history }) => {
+  const { getMovies } = useContext(AppContext) as ContextType;
   const goToPage = () => {
     history.push('/movies');
   };

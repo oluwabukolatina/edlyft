@@ -2,12 +2,13 @@ import React, { useContext } from 'react';
 import PopularSeries from '../PopularSeries';
 import Footer from '../../layouts/Footer';
 import AppContext from '../../context/AppContext';
-import { MultimediaProps } from '../types/MultimediaProps';
+import { MultimediaProps } from '../../types/MultimediaProps';
 import Loading from '../Loading';
 import Error from '../Error';
+import { ContextType } from '../../types/ContextType';
 
 const AllSeries = () => {
-  const { series, loading, error }: any = useContext(AppContext);
+  const { series, loading, error } = useContext(AppContext) as ContextType;
 
   return (
     <>
