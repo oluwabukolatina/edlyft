@@ -3,7 +3,7 @@ import React from 'react';
 const PopularMovies = () => {
   return (
     <div className="popular">
-      <p>Popular Titles</p>
+      <p>Popular Movies</p>
     </div>
   );
 };

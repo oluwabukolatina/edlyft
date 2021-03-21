@@ -1,15 +1,15 @@
 import React, { useContext } from 'react';
-import Header from '../layouts/Header';
-import PopularSeries from './PopularSeries';
-import Footer from '../layouts/Footer';
-import AppContext from '../context/AppContext';
-import { Series } from '../hooks/useMovies';
+import Header from '../../layouts/Header';
+import PopularSeries from '../PopularSeries';
+import Footer from '../../layouts/Footer';
+import AppContext from '../../context/AppContext';
+import { Series } from '../../hooks/useMovies';
 
 const AllSeries = () => {
   const { series }: any = useContext(AppContext);
 
   return (
-    <div className="app">
+    <>
       <Header />
       <PopularSeries />
       <div className="series">
@@ -21,7 +21,7 @@ const AllSeries = () => {
         ))}
       </div>
       <Footer />
-    </div>
+    </>
   );
 };
 

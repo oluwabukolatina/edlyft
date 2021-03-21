@@ -3,14 +3,14 @@ import React from 'react';
 import Header from '../layouts/Header';
 import PopularSeries from './PopularSeries';
 import Footer from '../layouts/Footer';
-import Movies from './Movies';
+import Multimedia from './Multimedia';
 const Home = () => (
-  <div className="app">
+  <>
     <Header />
     <PopularSeries />
-    <Movies />
+    <Multimedia />
     <Footer />
-  </div>
+  </>
 );
 
 export default Home;

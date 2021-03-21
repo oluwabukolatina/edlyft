@@ -1,9 +1,11 @@
 import React from 'react';
 import Placeholder from '../../assets/placeholder.png';
-
-const Series = () => {
+const Series = ({ history }: any) => {
+  const goToPage = () => {
+    history.push('/series');
+  };
   return (
-    <div>
+    <div onClick={goToPage}>
       <div className="movie">
         <img src={Placeholder} alt="placeholder" />
         <div className="center">Series</div>

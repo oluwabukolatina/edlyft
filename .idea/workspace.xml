@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15eb4838-5072-4b69-a36b-ceb20a4c3970" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/AllSeries.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/PopularMovies.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/movies/AllMovies.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AllSeries.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/series/AllSeries.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Movies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Movies.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Popular.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopularSeries.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Movies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Multimedia.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/PopularMovies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/PopularMovies.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/movies/Movie.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/movies/Movies.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/series/Series.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/series/Series.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/hooks/useMovies.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useMovies.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/provider/MoviesProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/provider/MoviesProvider.tsx" afterDir="false" />
@@ -52,8 +53,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/components/series" />
+      <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$/src/layouts" />
       <recent name="$PROJECT_DIR$/src" />
@@ -67,7 +68,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616173818250</updated>
-      <workItem from="1616173819670" duration="16532000" />
+      <workItem from="1616173819670" duration="18902000" />
+      <workItem from="1616311756224" duration="18000" />
     </task>
     <servers />
   </component>
