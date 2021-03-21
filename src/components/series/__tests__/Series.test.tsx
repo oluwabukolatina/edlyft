@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import { Router } from 'react-router-dom';
 import AllSeries from '../AllSeries';
 import { createMemoryHistory } from 'history';
-import MoviesProvider from '../../../provider/MoviesProvider';
+import MoviesProvider from '../../../provider/AppProvider';
 import '@testing-library/jest-dom/extend-expect';
 import AppContext from '../../../context/AppContext';
 

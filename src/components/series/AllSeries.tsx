@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
-import PopularSeries from '../PopularSeries';
-import Footer from '../../layouts/Footer';
+import PopularSeries from '../../layouts/PopularSeries';
 import AppContext from '../../context/AppContext';
 import { MultimediaProps } from '../../types/MultimediaProps';
-import Loading from '../Loading';
-import Error from '../Error';
+import Error from '../shared/Error';
 import { ContextType } from '../../types/ContextType';
+import Loading from '../shared/Loading';
 
 const AllSeries = () => {
   const { series, loading, error } = useContext(AppContext) as ContextType;
@@ -27,7 +26,6 @@ const AllSeries = () => {
       <PopularSeries />
       {error && <Error />}
       {loading ? <Loading /> : displaySeries}
-      <Footer />
     </>
   );
 };

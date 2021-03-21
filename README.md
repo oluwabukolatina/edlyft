@@ -98,3 +98,39 @@ We also prefer the use of minimal dependencies.
 Please send through any other code or projects that you're proud of and would like to share with us.
 
 Any feedback on the coding challenge once you're done is also appreciated!
+
+## Submission
+
+- How did you decide on the technical and architectural choices used as part of your solution?
+### Answer
+- I used React Context because it provides a way to share data (state) in the app without passing down props on every component/prop drilling. 
+As for the architecture, since react is non opinionated when itt comes to folder structure, I basically went with the flow.
+For components reused, i putt them in shared folder.
+Movies and Series are in seperate folders.
+Layouts- (footer and nav) which appears in all pages are in the layouts folder.
+
+- Are there any improvements you could make to your submission?
+### Answer
+-- Having a design link(eg figma) would be a big plus towards writing the app
+
+- What would you do differently if you were allocated more time?
+### Answer
+I had enough time.
+
+## Other Notes
+
+Please send through any other code or projects that you're proud of and would like to share with us.
+
+Any feedback on the coding challenge once you're done is also appreciated!
+
+## Links
+
+- [Tizeti Os](https://os.tizeti.com) Role - MERN Dev
+- [Wificall](https://os.tizeti.com) Role - MERN Dev
+- [Ghana Wifi](https://www.ghanawifi.com/) - Role - MERN Dev
+- [SeatGate](https://seatgate.info) - Role - React Dev
+- [Awabah](https://awabahng.com/) - Role - Nodejs Dev
+
+ ## Author
+## [Tina] (https://github.com/oluwabukolatina)
+

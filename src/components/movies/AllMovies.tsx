@@ -1,11 +1,10 @@
 import React, { useContext } from 'react';
-import Footer from '../../layouts/Footer';
 import AppContext from '../../context/AppContext';
-import PopularMovies from '../PopularMovies';
+import PopularMovies from '../../layouts/PopularMovies';
 import { MultimediaProps } from '../../types/MultimediaProps';
-import Loading from '../Loading';
-import Error from '../Error';
+import Error from '../shared/Error';
 import { ContextType } from '../../types/ContextType';
+import Loading from '../shared/Loading';
 
 const AllMovies = () => {
   const { movies, loading, error } = useContext(AppContext) as ContextType;
@@ -27,7 +26,6 @@ const AllMovies = () => {
       <PopularMovies />
       {error && <Error />}
       {loading ? <Loading /> : displayMovies}
-      <Footer />
     </p>
   );
 };

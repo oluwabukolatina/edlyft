@@ -1,12 +1,10 @@
 import React from 'react';
-import PopularSeries from './PopularSeries';
-import Footer from '../layouts/Footer';
+import PopularSeries from '../layouts/PopularSeries';
 import Multimedia from './Multimedia';
 const Home = () => (
   <>
     <PopularSeries />
     <Multimedia />
-    <Footer />
   </>
 );
 

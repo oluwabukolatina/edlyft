@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
-import MoviesProvider from '../../../provider/MoviesProvider';
+import MoviesProvider from '../../../provider/AppProvider';
 import '@testing-library/jest-dom/extend-expect';
 import AllMovies from '../AllMovies';
 import AppContext from '../../../context/AppContext';
