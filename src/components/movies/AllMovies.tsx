@@ -9,7 +9,6 @@ const AllMovies = () => {
   const { movies }: any = useContext(AppContext);
   return (
     <>
-      <Header />
       <PopularMovies />
       <div className="series">
         {movies.map((serie: Series, i: number) => (

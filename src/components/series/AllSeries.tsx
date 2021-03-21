@@ -10,7 +10,6 @@ const AllSeries = () => {
 
   return (
     <>
-      <Header />
       <PopularSeries />
       <div className="series">
         {series.map((serie: Series, i: number) => (
