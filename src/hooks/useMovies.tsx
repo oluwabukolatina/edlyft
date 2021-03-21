@@ -6,6 +6,7 @@ const useMovies = () => {
   const [movies, setMovies] = useState([]);
   const [series, setSeries] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   const getSeries = () => {
     setLoading(true);
     fetch(API_URL)
@@ -26,7 +27,8 @@ const useMovies = () => {
             }),
         );
         setLoading(false);
-      });
+      })
+      .catch(() => setError(true));
   };
   const getMovies = () => {
     setLoading(true);
@@ -48,7 +50,8 @@ const useMovies = () => {
             }),
         );
         setLoading(false);
-      });
+      })
+      .catch(() => setError(true));
   };
 
   /**
@@ -59,6 +62,6 @@ const useMovies = () => {
     getSeries();
   }, []);
 
-  return { movies, series, loading, getMovies, getSeries };
+  return { movies, series, loading, getMovies, getSeries, error };
 };
 export default useMovies;

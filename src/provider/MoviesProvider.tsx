@@ -3,7 +3,7 @@ import AppContext from '../context/AppContext';
 import useMovies from '../hooks/useMovies';
 
 const MoviesProvider = ({ children }: any) => {
-  const { movies, series, loading, getMovies, getSeries } = useMovies();
+  const { movies, series, loading, getMovies, getSeries, error } = useMovies();
   return (
     <AppContext.Provider
       value={{
@@ -12,6 +12,7 @@ const MoviesProvider = ({ children }: any) => {
         loading,
         getMovies,
         getSeries,
+        error,
       }}
     >
       {children}

@@ -4,12 +4,14 @@ import AppContext from '../../context/AppContext';
 import PopularMovies from '../PopularMovies';
 import { MultimediaProps } from '../types/MultimediaProps';
 import Loading from '../Loading';
+import Error from '../Error';
 
 const AllMovies = () => {
-  const { movies, loading }: any = useContext(AppContext);
+  const { movies, loading, error }: any = useContext(AppContext);
   return (
     <>
       <PopularMovies />
+      {error && <Error />}
       {loading ? (
         <Loading />
       ) : (
