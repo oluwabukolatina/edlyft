@@ -124,7 +124,7 @@ footer{
   grid-template-columns: 1fr 1fr;
   margin-top: 4%;
 }
-.socials{    
+.socials{
   display: flex;
   gap: 7%;
   }
@@ -136,3 +136,23 @@ footer{
 .store{display: grid;
   grid-template-columns: 1fr 1fr 1fr;}
 .store img{height: 11%}
+.windows{
+  width:50%
+}
+
+@media only screen and (max-width: 768px) {
+
+.series{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer{
+  height: 16%;
+  width: 100%;
+}
+.store{display: none;}
+.header{
+  grid-template-columns: 50% 18% auto;
+}
+.login{    margin-top: 19%;}
+.movie-img{width: 207px;}
+}

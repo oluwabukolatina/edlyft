@@ -36,7 +36,7 @@ const Footer = () => {
         <div className="store">
           <img src={AppStore} alt="app store" />
           <img src={PlayStore} alt="play store" />
-          <img src={Windows} alt="window store" width="50%" />
+          <img src={Windows} alt="window store" className="windows" />
         </div>
       </div>
     </footer>
